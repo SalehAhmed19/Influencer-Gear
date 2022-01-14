@@ -1,6 +1,12 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: "Manrope", sans-serif; */
 
 *{
     font-family: "Poppins", sans-serif;
@@ -63,6 +69,10 @@ header nav ul li a{
     display: inline-block;
     margin-top: 16.1px;
 }
+.sec-01 .box .left .preebook{
+    color: #fff;
+    margin-left: 8px;
+}
 .sec-01 .box .right{
     margin-top: 80px;
     display: flex;
@@ -79,7 +89,7 @@ header nav ul li a{
 }
 /* SEC-01 STYLES END */
 
-/* SEC-02 STULES START */
+/* SEC-02 STYLES START */
 .sec-02{
     display: flex;
     justify-content: center;
@@ -87,7 +97,7 @@ header nav ul li a{
     margin-top: 69px;
 }
 .sec-02 .images{
-    width: 1200px;
+    width: 968px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -96,4 +106,150 @@ header nav ul li a{
     border-bottom: 1px solid transparent;
     border-image: radial-gradient(#f1f1f100, #e0dfdf, #f1f1f100) 5;
 }
-/* SEC-02 STULES END */
+/* SEC-02 STYLES END */
+
+/* SEC-03 STYLES START */
+.sec-03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.sec-03 h2{
+    display: flex;
+    justify-content: center;
+}
+.sec-03 .products{
+    width: 1047px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 30px;
+}
+.sec-03 .products .product{
+    box-shadow: 5px 5px 20px #0000001e;
+    border-radius: 5px;
+}
+.sec-03 .products .product .product-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-03 .products .product .product-image img{
+    width: 90%;
+    margin-top: 17px;
+}
+.sec-03 .products .product .product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
+    margin-left: 14px;
+}
+.sec-03 .products .product .product-info h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+.sec-03 .products .product .product-info h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+.sec-03 .products .product .product-info .ratings p{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+}
+.sec-03 .products .product .product-info .ratings p i{
+    font-size: 12px;
+    color: #FB8200;
+}
+.sec-03 .products .product .product-info .short-text{
+    margin-top: 5px;
+    margin-bottom: 17px;
+    width: 196px;
+    height: 61px;
+}
+.sec-03 .products .product .product-info .short-text p{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
+
+/* SEC-03 STYLES END */
+
+/* BUTTON-PART STYLES START */
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.button .link{
+    width: 1047px;
+    display: flex;
+    justify-content: right;
+}
+.button .link .see-more{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button .link .see-more a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    margin-right: 8px;
+}
+.button .link .see-more i{
+    color: #E02C6D;
+}
+/* BUTTON-PART STYLES END */
+
+/* FOOTER STYLES START */
+    footer{
+        background-color: #0A0826;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 239px;
+    }
+    footer .footer-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-info h2{
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    footer .footer-info p{
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 3px;
+        line-height: 24px;
+    }
+    footer .footer-info .social-icon{
+        width: 176px;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .footer-info .social-icon a{
+        margin-top: 17px;
+        padding: 10px 12px;
+        background-color: rgba(255, 255, 255, 0.048);
+        border-radius: 20px;
+    }
+    footer .footer-info .social-icon a i{
+        font-size: 17px;
+        color: #fff;
+    }
+/* FOOTER STYLES END */
