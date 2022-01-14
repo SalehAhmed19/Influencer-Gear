@@ -328,11 +328,11 @@ main{
     .sec-02 .images{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 18px;
     }
-    .sec-02 .images .image{
-        width: 30px;
+    .sec-02 .images .image img{
+        width: 80%;
     }
     .sec-03{
         margin-top: 50px;
