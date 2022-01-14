@@ -44,6 +44,11 @@ header nav ul li a{
 /* HEADER STYLES END */
 
 /* SEC-01 STYLES START */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .sec-01{
     display: flex;
     justify-content: center;
@@ -90,6 +95,7 @@ header nav ul li a{
 /* SEC-01 STYLES END */
 
 /* SEC-02 STYLES START */
+
 .sec-02{
     display: flex;
     justify-content: center;
@@ -253,3 +259,109 @@ header nav ul li a{
         color: #fff;
     }
 /* FOOTER STYLES END */
+
+@media only screen and (max-width: 688px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav{
+        width: auto;
+    }
+    header nav .logo h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    header nav .menu{
+        display: none;
+    }
+    .sec-01{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec-01 .box{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sec-01 .box .column-01 .left{
+        margin: 0;
+        width: 404px;
+        height: 222px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec-01 .box .column-02{
+        margin-bottom: 14px;
+    }
+    .sec-01 .box .left h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .sec-01 .box .left p{
+        width: 321px;
+        text-align: center;
+    }
+    .sec-01 .box .right img{
+        width: 257px;
+        height: 257px;
+    }
+    .sec-02{
+        width: 275.21px;
+        height: 61px;
+        display: flex;
+        align-items: center;
+        margin: 64px;
+        justify-content: center;
+    }
+    .sec-02 .images{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+    }
+    .sec-02 .images .image{
+        width: 30px;
+    }
+    .sec-03{
+        margin-top: 50px;
+    }
+    .sec-03 .products{
+        width: 329px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin-top: 30px;
+    }
+    .button{
+        width: 360px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer .footer-info h2{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    footer .footer-info p{
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 3px;
+        line-height: 24px;
+    }
+}
