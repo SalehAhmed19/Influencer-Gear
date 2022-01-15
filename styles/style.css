@@ -71,12 +71,15 @@ body{
     text-decoration: none;
     display: block;
     height: 40px;
-    width: 170px;
+    width: 175px;
     padding: 8px 24px;
     background-color: #E02C6D;
     border-radius: 20px;
     color: #fff;
     display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 16.1px;
 }
 .left-banner a:hover{
@@ -84,6 +87,7 @@ body{
     transition: transform 1s;
 }
 .left-banner .preebook{
+    margin-left: 8px;
     color: rgb(255, 255, 255);
 }
 .sec-logo{
