@@ -9,63 +9,61 @@
 /* font-family: "Manrope", sans-serif; */
 
 *{
-    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: #3A3A3A;
 }
-/* HEADER STYLES START */
-header{
-    display: flex;
-    justify-content: center;
+body{
+    font-family: "Poppins", sans-serif;
 }
-/* NAVIGATION STYLES START */
-header nav{
-    margin-top: 50px;
+.container{
     width: 1200px;
+    padding-top: 46px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav .logo h1{
-    font-size: 52.2px;
-}
-header nav ul{
+.navigation{
     display: flex;
 }
-header nav ul li{
-    list-style-type: none;
+.navigation li{
     margin-left: 34px;
+    list-style: none;
 }
-header nav ul li a{
+.navigation li a{
     text-decoration: none;
 }
-/* NAVIGATION STYLES END */
-/* HEADER STYLES END */
-
-/* SEC-01 STYLES START */
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.sec-01{
-    display: flex;
-    justify-content: center;
-}
-.sec-01 .box{
-    width: 1200px;
+.banner{
     display: grid;
     grid-template-columns: 1fr 475px;
+    grid-column-gap: 133px;
 }
-.sec-01 .box .left{
+.right-banner{
+    margin-top: 50px;
+}
+.right-banner .image-background{
+    position: absolute;
+}
+.right-banner img{
+    width: 440px;
+    height: 414px;
+    position: relative;
+    z-index: 1;
+}
+.left-banner{
     margin-top: 145.8px;
-    margin-right: 133px;
 }
-.sec-01 .box .left h1{
+.left-banner h1{
     font-size: 52px;
+    font-weight: 700;
 }
-.sec-01 .box .left a{
+.left-banner p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.left-banner a{
     text-decoration: none;
     padding: 8px 24px;
     background-color: #E02C6D;
@@ -74,35 +72,18 @@ main{
     display: inline-block;
     margin-top: 16.1px;
 }
-.sec-01 .box .left .preebook{
-    color: #fff;
-    margin-left: 8px;
+.left-banner .preebook{
+    color: rgb(255, 255, 255);
 }
-.sec-01 .box .right{
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-}
-.sec-01 .box .right .image-background{
-    position: absolute;
-}
-.sec-01 .box .right img{
-    width: 440px;
-    height: 414px;
-    position: relative;
-    z-index: 1;
-}
-/* SEC-01 STYLES END */
-
-/* SEC-02 STYLES START */
-
-.sec-02{
+.sec-logo{
+    width: 1200px;
+    margin: 69px auto;
+    padding: 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 69px;
 }
-.sec-02 .images{
+.images{
     width: 968px;
     height: 100px;
     display: flex;
@@ -112,253 +93,192 @@ main{
     border-bottom: 1px solid transparent;
     border-image: radial-gradient(#f1f1f100, #e0dfdf, #f1f1f100) 5;
 }
-/* SEC-02 STYLES END */
-
-/* SEC-03 STYLES START */
-.sec-03{
+.main-part .sec-1{
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
 }
-.sec-03 h2{
-    display: flex;
-    justify-content: center;
-}
-.sec-03 .products{
-    width: 1047px;
+.main-part .sec-1 .products{
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    margin-top: 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
-.sec-03 .products .product{
+.main-part .products .product{
     box-shadow: 5px 5px 20px #0000001e;
     border-radius: 5px;
 }
-.sec-03 .products .product .product-image{
+.main-part .products .product .product-image{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.sec-03 .products .product .product-image img{
+.main-part .products .product .product-image img{
     width: 90%;
     margin-top: 17px;
 }
-.sec-03 .products .product .product-info{
+.main-part .products .product .product-info{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 16px;
     margin-left: 14px;
 }
-.sec-03 .products .product .product-info h1{
+.main-part .products .product .product-info h1{
     font-size: 28px;
     font-weight: 500;
 }
-.sec-03 .products .product .product-info h2{
+.main-part .products .product .product-info h2{
     font-size: 24px;
     font-weight: 400;
 }
-.sec-03 .products .product .product-info .ratings p{
+.main-part .products .product .product-info .ratings p{
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #5E6366;
 }
-.sec-03 .products .product .product-info .ratings p i{
+.main-part .products .product .product-info .ratings p i{
     font-size: 12px;
     color: #FB8200;
 }
-.sec-03 .products .product .product-info .short-text{
+.main-part .products .product .product-info .short-text{
     margin-top: 5px;
     margin-bottom: 17px;
     width: 196px;
     height: 61px;
 }
-.sec-03 .products .product .product-info .short-text p{
+.main-part .products .product .product-info .short-text p{
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #787885;
 }
-
-/* SEC-03 STYLES END */
-
-/* BUTTON-PART STYLES START */
-.button{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-.button .link{
-    width: 1047px;
-    display: flex;
-    justify-content: right;
-}
-.button .link .see-more{
-    margin-top: 50px;
+footer{
+    margin-top: 100px;
+    background-color: #0A0826;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 239px;
 }
-.button .link .see-more a{
-    text-decoration: none;
-    color: #E02C6D;
-    font-size: 16px;
-    font-weight: 700;
+footer .footer-info{
     display: flex;
-    margin-right: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.button .link .see-more i{
-    color: #E02C6D;
+footer .footer-info h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
 }
-/* BUTTON-PART STYLES END */
+footer .footer-info p{
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 3px;
+    line-height: 24px;
+}
+footer .footer-info .social-icon{
+    width: 176px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-info .social-icon a{
+    margin-top: 17px;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 20px;
+}
+footer .footer-info .social-icon a i{
+    font-size: 17px;
+    color: #fff;
+}
 
-/* FOOTER STYLES START */
-    footer{
-        background-color: #0A0826;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 239px;
-    }
-    footer .footer-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    footer .footer-info h2{
-        color: #fff;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    footer .footer-info p{
-        color: #fff;
-        font-family: "Manrope", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        margin-top: 3px;
-        line-height: 24px;
-    }
-    footer .footer-info .social-icon{
-        width: 176px;
-        display: flex;
-        justify-content: space-between;
-    }
-    footer .footer-info .social-icon a{
-        margin-top: 17px;
-        padding: 10px 12px;
-        background-color: rgba(255, 255, 255, 0.048);
-        border-radius: 20px;
-    }
-    footer .footer-info .social-icon a i{
-        font-size: 17px;
-        color: #fff;
-    }
-/* FOOTER STYLES END */
-
-/* MEDEA QUERIES FOR MOBILE */
+/* MEDIA-QUERIES */
 @media only screen and (max-width: 688px){
-    body{
+    .container{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-    header{
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    header nav{
-        width: auto;
-    }
-    header nav .logo h2{
-        font-size: 16px;
-        text-align: center;
-    }
-    header nav .menu{
+    .container .menu{
+        position: absolute;
         display: none;
     }
-    .sec-01{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    .container .logo h1{
+        font-size: 16px;
     }
-    .sec-01 .box{
+    .container .banner{
         width: 100%;
+        grid-template-columns: 1fr;
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
-    .sec-01 .box .column-01 .left{
-        margin: 0;
-        width: 404px;
-        height: 222px;
+    .container .banner .right-banner{
+        display: flex;
+        justify-content: center;
+    }
+    .container .banner .right-banner img{
+        width: 60%;
+        height: 25%;
+    }
+    .container .banner .left-banner{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 20px;
     }
-    .sec-01 .box .column-02{
-        margin-bottom: 14px;
-    }
-    .sec-01 .box .left h1{
-        font-size: 30px;
+    .container .banner .left-banner h1{
+        font-size: 28px;
         text-align: center;
     }
-    .sec-01 .box .left p{
-        width: 321px;
+    .container .banner .left-banner p{
+        font-size: 14px;
         text-align: center;
+        width: 85%;
     }
-    .sec-01 .box .right img{
-        width: 257px;
-        height: 257px;
+    .container .banner .left-banner a{
+        font-size: 16px;
+        padding: 4px 14px;
     }
-    .sec-02{
-        width: 275.21px;
-        height: 61px;
+    .sec-logo{
+        width: 100%;
+    }
+    .sec-logo .images{
+        width: 90%;
+        height: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, .5fr);
+    }
+    .sec-logo .images img{
+        width: 30px;
         display: flex;
-        align-items: center;
-        margin: 64px;
-        justify-content: center;
     }
-    .sec-02 .images{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 18px;
+    .main-part{
+        width: 300px;
+        margin: 0 auto;
     }
-    .sec-02 .images .image img{
-        width: 80%;
+    .sec-1{
+        width: 300px;
+        margin: 0 auto;
     }
-    .sec-03{
-        margin-top: 50px;
-    }
-    .sec-03 .products{
-        width: 329px;
-        display: grid;
+    .main-part .sec-1 .products{
         grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-        margin-top: 30px;
-    }
-    .button{
-        width: 360px;
-    }
-    footer{
-        width: 100%;
     }
     footer .footer-info h2{
-        color: #fff;
         font-size: 16px;
         font-weight: 700;
     }
     footer .footer-info p{
-        color: #fff;
         font-family: "Manrope", sans-serif;
         font-size: 12px;
         font-weight: 700;
