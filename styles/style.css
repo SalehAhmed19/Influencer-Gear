@@ -25,6 +25,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+/* NAVIGATION START */
 .navigation{
     display: flex;
 }
@@ -35,6 +36,8 @@ body{
 .navigation li a{
     text-decoration: none;
 }
+/* NAVIGATION END */
+/* BANNER START */
 .banner{
     display: grid;
     grid-template-columns: 1fr 475px;
@@ -90,6 +93,9 @@ body{
     margin-left: 8px;
     color: rgb(255, 255, 255);
 }
+/* BANNER END */
+
+/* SEC-LOGO START */
 .sec-logo{
     width: 1200px;
     margin: 69px auto;
@@ -108,6 +114,9 @@ body{
     border-bottom: 1px solid transparent;
     border-image: radial-gradient(#f1f1f100, #e0dfdf, #f1f1f100) 5;
 }
+/* SEC-LOGO END */
+
+/* MAIN START */
 .main-part .sec-1{
     width: 100%;
     margin: 0 auto;
@@ -236,6 +245,9 @@ body{
 .bonus-sec .content .column i{
     color: #E02C6D;
 }
+/* MAIN END */
+
+/* FOOTER START */
 footer{
     margin-top: 80px;
     background-color: #0A0826;
@@ -278,6 +290,7 @@ footer .footer-info .social-icon a i{
     font-size: 17px;
     color: #fff;
 }
+/* FOOTER END */
 
 /* MEDIA-QUERIES FOR MOBILE */
 @media only screen and (max-width: 688px){
