@@ -173,6 +173,54 @@ body{
 .ancor i{
     color: #E02C6D;
 }
+.bonus-sec{
+    width: 1200px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bonus-sec h2{
+    text-align: center;
+}
+.bonus-sec .content{
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.bonus-sec .content .column{
+    display: flex;
+    height: 320px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.068);
+}
+.bonus-sec .content .column img{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 90%;
+}
+.bonus-sec .content .column h3{
+    margin: 10px;
+}
+.bonus-sec .content .column p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+.bonus-sec .content .column a{
+    margin-top: 20px;
+    color: #E02C6D;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+.bonus-sec .content .column i{
+    color: #E02C6D;
+}
 footer{
     margin-top: 80px;
     background-color: #0A0826;
@@ -294,6 +342,32 @@ footer .footer-info .social-icon a i{
         width: 100%;
         justify-content: center;
     }
+    .bonus-sec{
+        width: 100%;
+    }
+    .bonus-sec .content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    .bonus-sec .content .column{
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.068);
+    }
+    .bonus-sec .content .column h3{
+        height: 58px;
+    }
+    .bonus-sec .content .column p{
+        font-size: 10px;
+    }
+    .bonus-sec .content .column .link{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .bonus-sec .content .column a{
+        text-align: center;
+        font-size: 8px;
+    }
     footer .footer-info h2{
         font-size: 16px;
         font-weight: 700;
@@ -384,6 +458,25 @@ footer .footer-info .social-icon a i{
     .ancor{
         width: 100%;
         justify-content: center;
+    }
+    .bonus-sec{
+        width: 100%;
+    }
+    .bonus-sec .content .column h3{
+        height: 58px;
+    }
+    .bonus-sec .content .column p{
+        font-size: 10px;
+    }
+    .bonus-sec .content .column .link{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .bonus-sec .content .column a{
+        text-align: center;
+        font-size: 8px;
     }
     footer .footer-info h2{
         font-size: 16px;
