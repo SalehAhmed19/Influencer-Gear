@@ -216,7 +216,7 @@ footer .footer-info .social-icon a i{
     color: #fff;
 }
 
-/* MEDIA-QUERIES */
+/* MEDIA-QUERIES FOR MOBILE */
 @media only screen and (max-width: 688px){
     .container{
         width: 100%;
@@ -289,6 +289,97 @@ footer .footer-info .social-icon a i{
     }
     .main-part .sec-1 .products{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .ancor{
+        width: 100%;
+        justify-content: center;
+    }
+    footer .footer-info h2{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    footer .footer-info p{
+        font-family: "Manrope", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 3px;
+        line-height: 24px;
+    }
+}
+
+/* MEDIA QUERIES FOR TAB */
+@media only screen and (min-width: 688px) and (max-width: 1032px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .menu{
+        position: absolute;
+        display: none;
+    }
+    .container .logo h1{
+        font-size: 16px;
+    }
+    .container .banner{
+        width: 100%;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container .banner .right-banner{
+        display: flex;
+        justify-content: center;
+    }
+    .container .banner .right-banner img{
+        width: 60%;
+        height: 25%;
+    }
+    .container .banner .left-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .container .banner .left-banner h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .container .banner .left-banner p{
+        font-size: 14px;
+        text-align: center;
+        width: 85%;
+    }
+    .container .banner .left-banner a{
+        font-size: 16px;
+        padding: 4px 14px;
+    }
+    .sec-logo{
+        width: 100%;
+    }
+    .sec-logo .images{
+        width: 90%;
+        height: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, .5fr);
+    }
+    .sec-logo .images img{
+        width: 30px;
+        display: flex;
+    }
+    .main-part{
+        width: 689px;
+        margin: 0 auto;
+    }
+    .sec-1{
+        width: 689px;
+        margin: 0 auto;
+    }
+    .main-part .sec-1 .products{
+        grid-template-columns: repeat(2, 1fr);
     }
     .ancor{
         width: 100%;
