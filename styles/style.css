@@ -157,8 +157,24 @@ body{
     font-weight: 700;
     color: #787885;
 }
+.ancor{
+    width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.ancor a{
+    color: #E02C6D;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+.ancor i{
+    color: #E02C6D;
+}
 footer{
-    margin-top: 100px;
+    margin-top: 80px;
     background-color: #0A0826;
     display: flex;
     justify-content: center;
@@ -273,6 +289,10 @@ footer .footer-info .social-icon a i{
     }
     .main-part .sec-1 .products{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .ancor{
+        width: 100%;
+        justify-content: center;
     }
     footer .footer-info h2{
         font-size: 16px;
